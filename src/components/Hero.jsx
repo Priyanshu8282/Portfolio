@@ -10,9 +10,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen mx-auto bg-transparent">
+    <section className="relative w-full mx-auto bg-transparent h-screen">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 `}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -22,9 +22,11 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText}`}>
             Hi, I'm <span className="text-[#915eff]">Priyanshu</span>
           </h1>
+          
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop responsive web applications
           </p>
+          <br />
           <div className="flex mt-4 space-x-4 w-full gap-2">
             <motion.a
               href="https://www.linkedin.com/in/priyanshu-sharma-642337245"
@@ -59,6 +61,7 @@ const Hero = () => {
               <FaPhone className="text-white text-2xl hover:text-[#915eff]" />
             </motion.a>
           </div>
+          <br />
           <div className="mt-4">
             <motion.button
               whileHover={{ scale: 1.1 }}
