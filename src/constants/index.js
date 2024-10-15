@@ -57,10 +57,6 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
       name: "CSS 3",
       icon: css,
     },
@@ -75,6 +71,10 @@ import {
     {
       name: "Redux Toolkit",
       icon: redux,
+    },
+    {
+      name: "HTML 5",
+      icon: html,
     },
     {
       name: "Tailwind CSS",
