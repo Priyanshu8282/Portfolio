@@ -7,6 +7,8 @@ import { textVariant } from "../utils/motion";
 import { styles } from "../style";
 
 const Tech = () => {
+  const isMobile = window.innerWidth <= 1020;  // Mobile detection
+
   return (
     <>
       <motion.div variants={textVariant()} className='text-center'>
@@ -14,9 +16,13 @@ const Tech = () => {
       </motion.div>
       <div className='flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((technology) => (
-          <div className='w-28 h-28' key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-            <h3 className='text-white text-[16px] font-semibold text-center mt-2'>
+          <div className='w-16 h-16 sm:w-28 sm:h-28' key={technology.name}>
+            {isMobile ? (
+              <img src={technology.icon} alt={technology.name} className="w-full h-13" />
+            ) : (
+              <BallCanvas icon={technology.icon} />
+            )}
+            <h3 className='text-white text-[12px] sm:text-[16px] font-semibold text-center mt-2'>
               {technology.name}
             </h3>
           </div>
@@ -25,5 +31,6 @@ const Tech = () => {
     </>
   );
 };
+
 
 export default SectionWrapper(Tech, "skills");

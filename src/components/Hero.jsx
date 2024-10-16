@@ -9,23 +9,37 @@ const Hero = () => {
     window.open(`${resume1}`, "_blank");
   };
 
+  const textVariant = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+
   return (
-    <section className="relative w-full mx-auto bg-transparent h-screen">
+    <section className="relative w-full mx-auto bg-transparent h-[70vh]">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 `}
+        className={`${styles.paddingX} absolute inset-0 top-[80px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-1 sm:h-60 h-32 violet-gradient" /> {/* Reduced height of the line */}
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText}`}>
+          <motion.h1
+            className={`${styles.heroHeadText}`}
+            variants={textVariant}
+            initial="hidden"
+            animate="visible"
+          >
             Hi, I'm <span className="text-[#915eff]">Priyanshu</span>
-          </h1>
-          
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          </motion.h1>
+          <motion.p
+            className={`${styles.heroSubText} mt-2 text-white-100`}
+            variants={textVariant}
+            initial="hidden"
+            animate="visible"
+          >
             I develop responsive web applications
-          </p>
+          </motion.p>
           <br />
           <div className="flex mt-4 space-x-4 w-full gap-2">
             <motion.a
