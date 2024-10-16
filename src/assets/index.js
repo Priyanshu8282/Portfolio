@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import experience  from "./experience.png";
-import education from "./education.png";
+import experience  from "./experience.jpg";
+import education from "./education.jpg";
 
 import mobile from "./mobile.png";
 
