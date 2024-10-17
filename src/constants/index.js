@@ -49,7 +49,7 @@ import {
 
     {
       title: "Education",
-      subtitle:"B.tech degree (IT)",
+      subtitle:"Bachelor of Technology (IT)",
       icon: education, 
     },
   
