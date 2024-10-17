@@ -27,7 +27,7 @@ import {
     },
     {
       id: "skills",
-      title: "Skill",
+      title: "Skills",
 
     },
     {
