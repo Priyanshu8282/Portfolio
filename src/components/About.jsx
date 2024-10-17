@@ -53,11 +53,7 @@ const About = () => {
         projects that involve the use of these technologies. I am always looking
         to learn new things and improve my skills as a developer.
       </motion.p>
-      <div className='mt-20 flex flex-wrap gap-10 justify-center sm:justify-start'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+     
     </>
   );
 };
