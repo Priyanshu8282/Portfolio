@@ -154,6 +154,8 @@ import {
       ],
       image: resume,
       source_code_link: "https://github.com/Priyanshu8282/Resume-Maker.git",
+      live_demo_link: "https://resume-maker-teal-zeta.vercel.app"
+
     },
     {
       name: "Certificate Generator",
@@ -180,6 +182,7 @@ import {
       ],
       image: certificate,
       source_code_link: "https://github.com/Priyanshu8282/Certificate-Generator.git",
+      live_demo_link: "https://certificate-generator-frontend.onrender.com"
     },
     {
       name: "Food delivery",
@@ -205,6 +208,7 @@ import {
       ],
       image: food,
       source_code_link: "https://github.com/Priyanshu8282/Food-delivery.git",
+      live_demo_link: "https://food-delivery-frontend-2go0.onrender.com"
     },
   ];
   
