@@ -38,7 +38,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            I am develop responsive web applications
+            I develop responsive web applications
           </motion.p>
           <br />
           <div className="flex mt-4 space-x-4 w-full gap-2">
