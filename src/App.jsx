@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Hero, Tech, Works, Navbar } from './components';
+import { About, Contact, Experience, Hero, Tech, Works, Navbar,Whatsapp } from './components';
 import React from 'react';
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         <div className="relative z-0">
           <Contact />
         </div>
+        <Whatsapp />
       </div>
     </BrowserRouter>
   );
