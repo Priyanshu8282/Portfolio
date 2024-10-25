@@ -154,7 +154,7 @@ import {
       ],
       image: resume,
       source_code_link: "https://github.com/Priyanshu8282/Resume-Maker.git",
-      live_demo_link: "https://resume-maker-teal-zeta.vercel.app"
+      live_demo_link: "https://resume-maker-1-8vfd.onrender.com"
 
     },
     {
