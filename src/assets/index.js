@@ -29,11 +29,13 @@ import codeclause from "./company/codeclause.png";
 import resume from "./resume.png";
 import certificate from "./certificate.png";
 import food from "./food.png";
+import audio from "./audio.mp3";
 
 import resume1 from "./resume1.pdf"
 
 
 export {
+  audio,
   logo,
   backend,
   education,

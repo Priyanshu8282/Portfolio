@@ -1,10 +1,18 @@
-import React from "react";
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
+import React, { useRef } from "react";
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaVolumeUp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { resume1 } from "../assets";
+import { resume1, audio } from "../assets";
 
 const Hero = () => {
+  const audioRef = useRef(null);
+
+  const handleAudioPlay = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  };
+
   const handleDownloadResume = () => {
     window.open(`${resume1}`, "_blank");
   };
@@ -31,6 +39,11 @@ const Hero = () => {
             animate="visible"
           >
             Hi, I'm <span className="text-[#915eff]">Priyanshu</span>
+            &nbsp;&nbsp;
+            <FaVolumeUp
+              className="inline-block ml-2 text-[#e3e2e6] cursor-pointer size-9 hover:text-[#915eff] hover:scale-110 transition duration-300"
+              onClick={handleAudioPlay}
+            />
           </motion.h1>
           <motion.p
             className={`${styles.heroSubText} mt-2 text-white-100`}
@@ -88,6 +101,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <audio ref={audioRef} src={audio} />
     </section>
   );
 };
