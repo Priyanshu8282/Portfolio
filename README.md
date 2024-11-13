@@ -13,9 +13,7 @@ This project is a personal portfolio website designed to showcase my skills, pro
   - Integrated **Three.js** using **react-three-fiber** for rendering 3D elements.
   - **Framer Motion** for smooth, interactive animations.
 
-## Demo
 
-[Live Demo](https://your-portfolio-url.com) (replace with your actual demo link)
 
 ## Technologies Used
 
