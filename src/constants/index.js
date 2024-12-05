@@ -17,7 +17,7 @@ import {
    resume,
    certificate,
    food,
-  threejs,
+  threejs,transport,texteditor,weather
   } from "../assets";
   
   export const navLinks = [
@@ -32,7 +32,7 @@ import {
     },
     {
       id: "project",
-      title: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -209,6 +209,71 @@ import {
       image: food,
       source_code_link: "https://github.com/Priyanshu8282/Food-delivery.git",
       live_demo_link: "https://food-delivery-frontend-2go0.onrender.com"
+    },
+    {
+      name: "Transporation Website",
+      description:
+        "Our Transportation Services Website is a comprehensive platform designed to cater to the logistics and transport needs of businesses and individuals. With a sleek and user-friendly interface, the website offers seamless access to essential information and services, ensuring smooth operations and hassle-free experiences.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "red-text-gradient",
+        },
+        {
+          name: "emailjs",
+          color: "green-text-gradient",
+        },
+      
+      ],
+      image: transport,
+      source_code_link: "https://github.com/Priyanshu8282/Transportation.git",
+      live_demo_link: "https://ishan-transport-services.vercel.app"
+    },
+    {
+      name: "Text Editor",
+      description:
+        "The Text Editor is an intuitive and interactive tool designed for effortless text formatting and editing. It empowers users to easily apply styles such as bold, italic, underline, change text colors, and adjust text alignment. This editor is perfect for creating well-structured documents, writing notes, or drafting content with customizable formatting options.",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "red-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+      
+      ],
+      image: texteditor,
+      source_code_link: "https://github.com/Priyanshu8282/Text-Editor.git",
+      live_demo_link: "https://text-editor-priyanshu.vercel.app "
+    },
+    {
+      name: "Weather Extension",
+      description:
+        "The Weather Extension is a lightweight and intuitive browser tool that provides users with real-time weather updates and forecasts directly in their browser. Designed for convenience, this extension allows you to quickly check weather conditions for your current location or any selected city without needing to open a separate app or website.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "manifest.json",
+          color: "green-text-gradient",
+        },
+      
+      ],
+      image: weather,
+      source_code_link: "https://github.com/Priyanshu8282/Weather-Extension.git",
+      live_demo_link: "https://weather-extension-gilt.vercel.app"
     },
   ];
   

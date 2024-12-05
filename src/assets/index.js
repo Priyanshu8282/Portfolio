@@ -32,6 +32,9 @@ import food from "./food.png";
 import audio from "./audio.mp3";
 
 import resume1 from "./resume1.pdf"
+import transport from "./transport.png";
+import texteditor from "./texteditor.png";
+import weather from "./weather.png";
 
 
 export {
@@ -62,5 +65,5 @@ export {
  resume1,
   resume,
   certificate,
-  food
+  food, transport,texteditor,weather
 };
